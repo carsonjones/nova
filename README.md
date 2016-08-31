@@ -2,8 +2,8 @@
 
 _A color palette for programming_
 
-See [https://trevordmiller.github.io/echo](trevordmiller.github.io/echo) for more info
+See [trevordmiller.github.io/echo](https://trevordmiller.github.io/echo) for more info
 
 ---
 
-_Built by [@AC_Design](https://twitter.com/AC_Design) and [@trevordmiller](www.trevordmiller.com)_
+_Built by [@AC\_Design](https://twitter.com/AC\_Design) and [@trevordmiller](http://trevordmiller.com)_
