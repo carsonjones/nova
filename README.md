@@ -1,4 +1,4 @@
-# Echo
+# echo
 
 _A color palette for programming_
 
