@@ -1,8 +1,8 @@
-# echo
+# Nova
 
-_A color palette for programming_
+_A programming color scheme_
 
-See [trevordmiller.github.io/echo](https://trevordmiller.github.io/echo) for more info
+See [trevordmiller.github.io/nova](https://trevordmiller.github.io/nova) for more info
 
 ---
 

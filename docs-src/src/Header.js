@@ -6,8 +6,8 @@ const Header = () => (
   <header style={{
     padding: '1.3rem',
   }}>
-  <Title>echo</Title>
-  <Subtitle>A color palette for programming</Subtitle>
+  <Title>Nova</Title>
+  <Subtitle>A programming color scheme</Subtitle>
   </header>
 );
 
