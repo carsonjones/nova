@@ -2,7 +2,7 @@
 
 _A programming color scheme_
 
-See [trevordmiller.github.io/nova](https://trevordmiller.github.io/nova) for more info
+See [trevordmiller.github.io/nova-docs](https://trevordmiller.github.io/nova-docs) for more info
 
 ---
 
