@@ -1,8 +1,8 @@
 # Nova
 
-_A programming color scheme_
+Nova information website
 
-See [trevordmiller.github.io/nova-docs](https://trevordmiller.github.io/nova-docs) for more info
+See [trevordmiller.github.io/nova-docs](https://trevordmiller.github.io/nova-docs)
 
 ---
 
