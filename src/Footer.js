@@ -17,13 +17,14 @@ const Love = () => (
 
 const Footer = () => (
   <footer style={{
-    background: colors.decoration.medium,
-    color: colors.normal.cyan,
+    background: colors.decoration.light,
+    color: colors.normal.black,
     padding: spacing.container,
     marginTop: spacing.large,
     textAlign: 'center',
   }}>
     <div style={{
+      fontWeight: '400',
       display: 'flex',
       justifyContent: 'center',
       alignItems: 'center',

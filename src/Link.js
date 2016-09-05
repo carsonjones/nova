@@ -2,10 +2,14 @@ import React from 'react'
 import {colors} from './styleGuide'
 
 const Link = ({href, children}) => (
-  <a style={{
-    color: colors.normal.cyan,
-    textDecoration: 'underline',
-  }}>
+  <a 
+    href={href}
+    target='_blank'
+    style={{
+      color: colors.normal.cyan,
+      textDecoration: 'none',
+    }}
+  >
     {children}
   </a>
 )
