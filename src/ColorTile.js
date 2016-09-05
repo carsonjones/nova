@@ -1,19 +1,21 @@
-import React from 'react';
+import React from 'react'
+import {spacing, borderRadii} from './styleGuide'
 
-const size = '60px';
-
-const ColorTile = ({color}) => (
+const ColorTile = ({
+  color,
+  size = 40,
+}) => (
   <div style={{
     background: color,
-    borderRadius: '3px',
-    margin: '10px',
+    margin: spacing.xsmall,
+    borderRadius: borderRadii.medium,
     width: size,
     height: size,
   }} />
-);
+)
 
 ColorTile.propTypes = {
   color: React.PropTypes.string.isRequired,
-};
+}
 
-export default ColorTile;
+export default ColorTile

@@ -1,26 +1,24 @@
-import React, {Component} from 'react';
-import Header from './Header';
-import Main from './Main';
-import Footer from './Footer';
+import React from 'react'
+import {colors, fontFamilies, fontSizes, lineHeights} from './styleGuide'
+import Header from './Header'
+import Main from './Main'
+import Footer from './Footer'
 
-class App extends Component {
-  render() {
-    return (
-      <div style={{
-        fontFamily: '"Quicksand", sans-serif',
-        fontSize: '1.3rem',
-        background: '#717C89',
-        color: '#E8EBE4',
-        display: 'flex',
-        flexDirection: 'column',
-        minHeight: '100vh',
-      }}>
-        <Header />
-        <Main />
-        <Footer />
-      </div>
-    );
-  }
-}
+const App = () => ( 
+  <div style={{
+    background: colors.normal.black,
+    color: colors.normal.white,
+    fontFamily: fontFamilies.primary,
+    fontSize: fontSizes.medium,
+    lineHeight: lineHeights.medium,
+    display: 'flex',
+    flexDirection: 'column',
+    minHeight: '100vh',
+  }}>
+    <Header />
+    <Main />
+    <Footer />
+  </div>
+)
 
-export default App;
+export default App
