@@ -2,6 +2,7 @@
   "name": "nova-docs",
   "version": "1.0.0",
   "private": true,
+  "homepage": "http://trevordmiller.github.io/nova-docs",
   "devDependencies": {
     "react-scripts": "0.2.3"
   },
@@ -12,7 +13,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "postbuild": "rm -rf ../docs && cp -r build/ ../docs && rm -rf build/",
+    "postbuild": "rm -rf docs && cp -r build/ docs/ && rm -rf build/",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
