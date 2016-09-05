@@ -8,7 +8,7 @@ const Header = () => (
     padding: spacing.container,
   }}>
   <Title>Nova</Title>
-  <Subtitle>A programming color scheme</Subtitle>
+  <Subtitle>A modern programming color scheme</Subtitle>
   </header>
 )
 
