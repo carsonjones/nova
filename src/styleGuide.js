@@ -25,7 +25,7 @@ export const spacing = {
 }
 
 export const lineHeights = {
-  medium: 1.3,
+  medium: 1.5,
 }
 
 export const borderRadii = {

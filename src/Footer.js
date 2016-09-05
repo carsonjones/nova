@@ -20,7 +20,7 @@ const Footer = () => (
     background: colors.decoration.medium,
     color: colors.normal.cyan,
     padding: spacing.container,
-    marginTop: spacing.medium,
+    marginTop: spacing.large,
     textAlign: 'center',
   }}>
     <div style={{

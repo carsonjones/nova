@@ -3,8 +3,8 @@ import {colors} from './styleGuide'
 
 const Link = ({href, children}) => (
   <a style={{
-    color: colors.normal.yellow,
-    textDecoration: 'none',
+    color: colors.normal.cyan,
+    textDecoration: 'underline',
   }}>
     {children}
   </a>
