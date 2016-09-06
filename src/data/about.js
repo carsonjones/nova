@@ -1,6 +1,6 @@
 const about = {
   title: 'Nova',
-  description: 'A modern programming color scheme',
+  description: 'A color scheme for modern web development',
 }
 
 export default about
