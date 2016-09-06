@@ -1,5 +1,6 @@
 import React from 'react'
-import {spacing} from './styleGuide'
+import about from '../data/about'
+import {spacing} from '../styleGuide'
 import Title from './Title'
 import Subtitle from './Subtitle'
 
@@ -7,8 +8,8 @@ const Header = () => (
   <header style={{
     padding: spacing.container,
   }}>
-    <Title>Nova</Title>
-    <Subtitle>A modern programming color scheme</Subtitle>
+    <Title>{about.title}</Title>
+    <Subtitle>{about.description}</Subtitle>
   </header>
 )
 

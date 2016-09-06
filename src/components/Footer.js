@@ -1,6 +1,6 @@
 import React from 'react'
-import contributors from './contributors'
-import {colors, spacing} from './styleGuide'
+import contributors from '../data/contributors'
+import {colors, spacing} from '../styleGuide'
 import Link from './Link'
 import Icon from './Icon'
 

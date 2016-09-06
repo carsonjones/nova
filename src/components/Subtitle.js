@@ -3,7 +3,7 @@ import {
   fontSizes,
   fontWeights,
   spacing,
-} from './styleGuide'
+} from '../styleGuide'
 
 const Subtitle = ({children}) => (
   <h2 style={{

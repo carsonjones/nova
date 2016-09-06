@@ -1,6 +1,6 @@
 import React from 'react'
-import goals from './goals'
-import {spacing} from './styleGuide'
+import goals from '../data/goals'
+import {spacing} from '../styleGuide'
 import ColorPalette from './ColorPalette'
 import Points from './Points'
 

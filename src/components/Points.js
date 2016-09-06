@@ -1,5 +1,5 @@
 import React from 'react'
-import {spacing} from './styleGuide'
+import {spacing} from '../styleGuide'
 import Point from './Point'
 
 const Points = ({points}) => (

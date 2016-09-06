@@ -4,7 +4,7 @@ import {
   fontSizes,
   fontWeights,
   spacing,
-} from './styleGuide'
+} from '../styleGuide'
 
 const Title = ({children}) => (
   <h1 style={{

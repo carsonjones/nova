@@ -3,7 +3,7 @@ import {
   colors,
   spacing,
   borderRadii,
-} from './styleGuide'
+} from '../styleGuide'
 import SubsectionTitle from './SubsectionTitle'
 
 const Point = ({point}) => (

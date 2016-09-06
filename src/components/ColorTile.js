@@ -1,5 +1,5 @@
 import React from 'react'
-import {spacing, borderRadii} from './styleGuide'
+import {spacing, borderRadii} from '../styleGuide'
 
 const ColorTile = ({
   color,

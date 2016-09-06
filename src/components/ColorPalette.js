@@ -1,5 +1,5 @@
 import React from 'react'
-import {colors} from './styleGuide'
+import {colors} from '../styleGuide'
 import ColorTile from './ColorTile'
 
 const ColorPalette = () => (

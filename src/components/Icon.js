@@ -1,5 +1,5 @@
 import React from 'react'
-import {colors, fontSizes} from './styleGuide'
+import {colors, fontSizes} from '../styleGuide'
 
 export const svgs = {
   heart: (
