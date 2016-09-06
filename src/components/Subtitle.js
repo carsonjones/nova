@@ -9,7 +9,7 @@ const Subtitle = ({children}) => (
   <h2 style={{
     fontSize: fontSizes.xlarge,
     fontWeight: fontWeights.light,
-    marginTop: spacing.medium,
+    marginTop: 0,
     marginBottom: spacing.medium,
     textAlign: 'center',
   }}>

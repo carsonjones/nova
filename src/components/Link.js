@@ -6,7 +6,7 @@ const Link = ({href, children}) => (
     href={href}
     target='_blank'
     style={{
-      color: colors.normal.cyan,
+      color: colors.normal.yellow,
       textDecoration: 'none',
     }}
   >
