@@ -16,6 +16,7 @@ const ColorTile = ({
 
 ColorTile.propTypes = {
   color: React.PropTypes.string.isRequired,
+  size: React.PropTypes.number,
 }
 
 export default ColorTile

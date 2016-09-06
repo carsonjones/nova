@@ -6,21 +6,20 @@ import {
   spacing,
 } from './styleGuide'
 
-const Title = ({children}) => (
-  <h1 style={{
+const SubsectionTitle = ({children}) => (
+  <h4 style={{
     color: colors.normal.cyan,
-    fontSize: fontSizes.xxlarge,
+    fontSize: fontSizes.large,
     fontWeight: fontWeights.light,
-    marginTop: spacing.large,
-    marginBottom: spacing.large,
-    textAlign: 'center',
+    marginTop: 0,
+    marginBottom: spacing.xsmall,
   }}>
     {children}
-  </h1>
+  </h4>
 )
 
-Title.propTypes = {
+SubsectionTitle.propTypes = {
   children: React.PropTypes.string.isRequired,
 }
 
-export default Title
+export default SubsectionTitle

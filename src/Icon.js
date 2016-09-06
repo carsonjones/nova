@@ -31,6 +31,7 @@ Icon.propTypes = {
   type: React.PropTypes.oneOf(Object.keys(svgs)).isRequired,
   fill: React.PropTypes.string,
   size: React.PropTypes.number,
+  style: React.PropTypes.object,
 }
 
 export default Icon

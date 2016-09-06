@@ -1,6 +1,8 @@
 import React from 'react'
+import goals from './goals'
 import {spacing} from './styleGuide'
 import ColorPalette from './ColorPalette'
+import Points from './Points'
 
 const Main = () => (
   <main style={{
@@ -11,6 +13,7 @@ const Main = () => (
     alignItems: 'center',
   }}>
     <ColorPalette />
+    <Points points={goals} />
   </main>
 )
 

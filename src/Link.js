@@ -16,6 +16,7 @@ const Link = ({href, children}) => (
 
 Link.propTypes = {
   href: React.PropTypes.string.isRequired,
+  children: React.PropTypes.string.isRequired,
 }
 
 export default Link

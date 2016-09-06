@@ -7,8 +7,9 @@ export const fontFamilies = {
 }
 
 export const fontSizes = {
-  xlarge: 60,
-  large: 30,
+  xxlarge: 60,
+  xlarge: 30,
+  large: 24,
   medium: 18,
 }
 

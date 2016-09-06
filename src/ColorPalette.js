@@ -3,7 +3,7 @@ import {colors} from './styleGuide'
 import ColorTile from './ColorTile'
 
 const ColorPalette = () => (
-  <div style={{
+  <section style={{
     display: 'flex',
     flexWrap: 'wrap',
     justifyContent: 'center',
@@ -24,7 +24,7 @@ const ColorPalette = () => (
     <ColorTile color={colors.normal.blue} />
     <ColorTile color={colors.normal.magenta} />
     <ColorTile color={colors.bright.magenta} />
-  </div>
+  </section>
 )
 
 export default ColorPalette
