@@ -1,15 +1,18 @@
 import React from 'react'
 import about from '../data/about'
-import {spacing} from '../styleGuide'
-import Title from './Title'
-import Subtitle from './Subtitle'
+import {spacing} from '../data/styleGuide'
+import Heading from './Heading'
 
 const Header = () => (
   <header style={{
     padding: spacing.container,
   }}>
-    <Title>{about.title}</Title>
-    <Subtitle>{about.description}</Subtitle>
+    <Heading level={1}>
+      {about.title}
+    </Heading>
+    <Heading level={2}>
+      {about.description}
+    </Heading>
   </header>
 )
 

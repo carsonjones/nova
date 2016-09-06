@@ -1,13 +1,18 @@
 import React from 'react'
-import {colors} from '../styleGuide'
+import {colors} from '../data/styleGuide'
 
-const Link = ({href, children}) => (
+const Link = ({
+  href,
+  children,
+  inline = false,
+}) => (
   <a 
     href={href}
     target='_blank'
     style={{
-      color: colors.normal.yellow,
+      color: colors.normal.blue,
       textDecoration: 'none',
+      display: inline ? 'inline' : 'block',
     }}
   >
     {children}
@@ -17,6 +22,7 @@ const Link = ({href, children}) => (
 Link.propTypes = {
   href: React.PropTypes.string.isRequired,
   children: React.PropTypes.string.isRequired,
+  inline: React.PropTypes.bool,
 }
 
 export default Link

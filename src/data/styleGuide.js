@@ -1,5 +1,9 @@
 import novaColors from 'nova-colors'
 
+export const screenSizes = {
+  large: 740,
+}
+
 export const colors = novaColors
 
 export const fontFamilies = {
@@ -7,9 +11,9 @@ export const fontFamilies = {
 }
 
 export const fontSizes = {
-  xxlarge: 60,
-  xlarge: 30,
-  large: 24,
+  xxlarge: 76,
+  xlarge: 35,
+  large: 29,
   medium: 18,
 }
 

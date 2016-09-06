@@ -1,20 +1,18 @@
 import React from 'react'
-import goals from '../data/goals'
-import {spacing} from '../styleGuide'
-import ColorPalette from './ColorPalette'
-import Points from './Points'
 
-const Main = () => (
+const Main = ({children}) => (
   <main style={{
-    padding: spacing.container,
     flex: 1,
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
   }}>
-    <ColorPalette />
-    <Points points={goals} />
+    {children}
   </main>
 )
+
+Main.propTypes = {
+  children: React.PropTypes.node.isRequired,
+}
 
 export default Main

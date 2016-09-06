@@ -1,9 +1,9 @@
 import React from 'react'
-import {spacing, borderRadii} from '../styleGuide'
+import {spacing, borderRadii} from '../../data/styleGuide'
 
 const ColorTile = ({
   color,
-  size = 40,
+  size = 68,
 }) => (
   <div style={{
     background: color,
