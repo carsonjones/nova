@@ -1,4 +1,4 @@
-const goals = [
+const characteristics = [
   {
     title: 'Current',
     description: 'First-class syntax highlighting for today\'s web development languages',
@@ -25,4 +25,4 @@ const goals = [
   },
 ]
 
-export default goals
+export default characteristics

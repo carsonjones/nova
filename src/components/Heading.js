@@ -2,7 +2,6 @@ import React from 'react'
 import {
   colors,
   fontSizes,
-  fontWeights,
   spacing,
 } from '../data/styleGuide'
 
@@ -18,24 +17,20 @@ const levelSpecificStyles = {
     textAlign: 'center',
   },
   3: {
-    color: colors.normal.yellow,
-    fontSize: fontSizes.xlarge,
+    color: colors.normal.white,
+    fontSize: fontSizes.large,
+    textTransform: 'uppercase',
     marginBottom: spacing.medium,
-    textAlign: 'center',
   },
   4: {
     color: colors.normal.cyan,
-    fontSize: fontSizes.large,
+    fontSize: fontSizes.xlarge,
     marginBottom: spacing.small,
-    textAlign: 'center',
   },
   5: {
-    color: colors.normal.magenta,
+    color: colors.bright.white,
     fontSize: fontSizes.medium,
     marginBottom: spacing.small,
-    textAlign: 'left',
-    textTransform: 'uppercase',
-    textDecoration: 'underline',
   },
 }
 
@@ -43,10 +38,7 @@ const Heading = ({
   children,
   level,
 }) => (
-  <div style={{
-    fontWeight: fontWeights.light,
-    ...levelSpecificStyles[level],
-  }}>
+  <div style={levelSpecificStyles[level]}>
     {children}
   </div>
 )

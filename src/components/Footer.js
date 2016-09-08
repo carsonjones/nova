@@ -7,7 +7,6 @@ import Icon from './Icon'
 const Footer = () => (
   <footer style={{
     padding: spacing.container,
-    color: colors.bright.black,
     textAlign: 'center',
   }}>
     <div style={{
@@ -16,7 +15,7 @@ const Footer = () => (
       alignItems: 'center',
       marginBottom: spacing.xsmall,
     }}>
-      Built with 
+      // Built with 
       <div style={{
         marginLeft: spacing.xsmall,
         marginRight: spacing.xsmall,

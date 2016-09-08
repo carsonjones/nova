@@ -13,12 +13,11 @@ export const fontFamilies = {
 export const fontSizes = {
   xxlarge: 76,
   xlarge: 35,
-  large: 29,
+  large: 22,
   medium: 18,
 }
 
 export const fontWeights = {
-  normal: 400,
   light: 300,
 }
 
