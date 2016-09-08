@@ -25,7 +25,7 @@ const Platforms = () => (
           }}>
             <Icon
               type={platform.icon}
-              fill={colors.decoration.medium}
+              fill={colors.decoration.dark}
               size={120}
             />
           </div>

@@ -30,7 +30,7 @@ const levelSpecificStyles = {
     textAlign: 'center',
   },
   5: {
-    color: colors.bright.red,
+    color: colors.normal.magenta,
     fontSize: fontSizes.medium,
     marginBottom: spacing.small,
     textAlign: 'left',
