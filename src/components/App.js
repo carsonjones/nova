@@ -14,11 +14,11 @@ import Home from './Home/Home'
 
 const App = () => ( 
   <div style={{
-    background: colors.decoration.medium,
-    color: colors.normal.white,
+    background: colors.normal.black,
+    color: colors.bright.black,
     fontFamily: fontFamilies.primary,
     fontSize: fontSizes.medium,
-    fontWeight: fontWeights.normal,
+    fontWeight: fontWeights.light,
     lineHeight: lineHeights.medium,
     display: 'flex',
     flexDirection: 'column',

@@ -1,17 +1,17 @@
 import React from 'react'
 import Section from '../Section'
-import ColorPalette from './ColorPalette'
-import Goals from './Goals'
+import Colors from './Colors'
+import Characteristics from './Characteristics'
 import Platforms from './Platforms'
 
 const sections = [
   {
-    title: 'Color Palette',
-    elements: <ColorPalette />,
+    title: 'Colors',
+    elements: <Colors />,
   },
   {
-    title: 'Goals',
-    elements: <Goals />,
+    title: 'Characteristics',
+    elements: <Characteristics />,
   },
   {
     title: 'Platforms',

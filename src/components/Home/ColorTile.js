@@ -1,5 +1,5 @@
 import React from 'react'
-import {spacing, borderRadii} from '../../data/styleGuide'
+import {borderRadii} from '../../data/styleGuide'
 
 const ColorTile = ({
   color,
@@ -7,7 +7,6 @@ const ColorTile = ({
 }) => (
   <div style={{
     background: color,
-    margin: spacing.xsmall,
     borderRadius: borderRadii.medium,
     width: size,
     height: size,
