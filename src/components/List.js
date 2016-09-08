@@ -17,6 +17,7 @@ const List = ({
           textAlign: 'left',
         }}
       >
+        {console.log(item)}
         <span style={{
           color: symbolColor,
           marginRight: spacing.xsmall,

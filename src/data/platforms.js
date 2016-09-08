@@ -7,8 +7,8 @@ const platforms = [
       'Add "colorscheme nova" to your .vimrc (after any other plugins or rules that alter your color scheme)',
     ],
     notes: [
-      'You\'ll need True Color support (Latest Vim, Neovim, or GUI Vim)',
-      'For terminal Vim use, you\'ll also need a terminal with True Color support',
+      'Youll need True Color support (Latest Vim, Neovim, or GUI Vim)',
+      'For terminal Vim use, youll also need a terminal with True Color support',
       'For terminal Vim use, it is highly recommended to use a Nova terminal plugin as well for consistent colors',
     ],
     links: [
@@ -42,7 +42,7 @@ const platforms = [
       'Update your ".tmux.conf" styles as shown in the example',
     ],
     note: [
-      'You\'ll need to have a Nova terminal plugin installed for these ANSI color variables to work',
+      'Youll need to have a Nova terminal plugin installed for these ANSI color variables to work',
     ],
     links: [
       {
@@ -86,13 +86,12 @@ const platforms = [
     icon: 'npm',
     steps: [
       'npm install -S nova-colors',
-      'import novaColors from \'nova-colors\'',
+      'import novaColors from nova-colors',
       'novaColors.{colorCategory}.{colorType}',
     ],
     notes: [
-      '\'normal\': standard 8 ANSI colors (\'black\', red\', green\', yellow\', blue\', magenta\', cyan\', white\')',
-      '\'bright\': bright variations (\'black\', \'red\', \'magenta\', \'white\')',
-      '\'decoration\': subtle black variations (\'dark\', \'medium\', \'light\')',
+      'normal: standard 8 ANSI colors (black, red, green, yellow, blue, magenta, cyan, white)', 'bright: bright variations (black, red, magenta, white)',
+      'decoration: subtle black variations (dark, medium, light)',
     ],
     links: [
       {
