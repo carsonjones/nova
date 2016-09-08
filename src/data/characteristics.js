@@ -17,7 +17,7 @@ const characteristics = [
   },
   {
     title: 'Maintainable',
-    description: 'Lightweight plugins consume a single-source-of-truth for colors and documentation',
+    description: 'Single-source-of-truth for colors and documentation',
   },
   {
     title: 'Free',
