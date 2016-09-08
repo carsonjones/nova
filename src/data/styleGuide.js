@@ -33,7 +33,15 @@ export const lineHeights = {
   medium: 1.5,
 }
 
+export const borderSizes = {
+  medium: 2,
+}
+
 export const borderRadii = {
   large: 7,
   medium: 3,
+}
+
+export const opacities = {
+  inactive: 0.5,
 }
