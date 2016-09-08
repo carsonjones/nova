@@ -1,79 +1,134 @@
 import React from 'react'
+import {
+  Tab,
+  Tabs,
+  TabList,
+  TabPanel,
+} from 'react-tabs';
+Tabs.setUseDefaultStyles(false)
 import platforms from '../../data/platforms'
-import {colors, spacing} from '../../data/styleGuide'
+import {
+  colors,
+  spacing,
+  borderSizes,
+  opacities,
+} from '../../data/styleGuide'
 import Heading from '../Heading'
 import Icon from '../Icon'
 import List from '../List'
 import Link from '../Link'
 
-const Platforms = () => (
-  <div>
-    {platforms.map((platform, index) => (
-      <div
-        key={index}
-        style={{
-          marginBottom: (index + 1 < platforms.length) ? spacing.medium : 0,
-        }}
-      >
-        <Heading level={4}>
-          {platform.title}
-        </Heading>
-        <div style={{
-          marginBottom: spacing.small,
+class Platforms extends React.Component {
+
+  constructor(props) {
+    super(props)
+    this.state = {
+      activeTab: 0,
+    }
+  }
+
+  handleTabClick(clickedTabIndex) {
+    this.setState({
+      activeTab: clickedTabIndex,
+    })
+  }
+
+  render() {
+    return (
+      <Tabs>
+        <TabList style={{
+          listStyle: 'none',
+          padding: 0,
+          display: 'flex',
+          justifyContent: 'space-between',
+          marginBottom: spacing.medium,
         }}>
-          <Icon
-            type={platform.icon}
-            fill={colors.decoration.medium}
-            size={120}
-          />
-        </div>
-        {platform.steps
-          ? <div style={{
-              marginBottom: (platform.notes || platform.links) ? spacing.medium : 0,
+          {platforms.map((platform, index) => (
+            <Tab
+              key={index}
+              onClick={this.handleTabClick.bind(this, index)}
+              style={{
+                color: colors.normal.blue,
+                borderBottom: `${borderSizes.medium}px solid ${index === this.state.activeTab ? colors.bright.white : colors.decoration.medium}`,
+                paddingBottom: spacing.small,
+                opacity: index === this.state.activeTab ? 1 : opacities.inactive,
+                flex: 1,
+                display: 'flex',
+                justifyContent: 'center',
+                alignItems: 'center',
+              }}
+            >
+              <Icon
+                type={platform.icon}
+                fill={colors.normal.blue}
+                size={40}
+              />
+            </Tab>
+          ))}
+        </TabList>
+        {platforms.map((platform, index) => (
+          <TabPanel key={index}>
+            <Heading level={4}>
+              {platform.title}
+            </Heading>
+            <div style={{
+              marginBottom: spacing.small,
             }}>
-              <Heading level={5}>
-                Instructions
-              </Heading>
-              <List
-                items={platform.steps}
-                type='number'
+              <Icon
+                type={platform.icon}
+                fill={colors.decoration.medium}
+                size={120}
               />
             </div>
-          : null
-        }
-        {platform.notes
-          ? <div style={{
-              marginBottom: (platform.links) ? spacing.medium : 0,
-            }}>
-              <Heading level={5}>
-                Notes
-              </Heading>
-              <List items={platform.notes} />
-            </div>
-          : null
-        }
-        {platform.links
-          ? <div>
-              <Heading level={5}>
-                Links
-              </Heading>
-              <List
-                items={platform.links.map(link => (
-                  <Link
-                    href={link.url}
-                    inline={true}
-                  >
-                    {link.title}
-                  </Link>
-                ))}
-                type='link'
-              />
-            </div>
-          : null
-        }
-      </div>
-    ))}
-  </div>
-)
+            {platform.steps
+              ? <div style={{
+                  marginBottom: (platform.notes || platform.links) ? spacing.medium : 0,
+                }}>
+                  <Heading level={5}>
+                    Instructions
+                  </Heading>
+                  <List
+                    items={platform.steps}
+                    type='number'
+                  />
+                </div>
+              : null
+            }
+            {platform.notes
+              ? <div style={{
+                  marginBottom: (platform.links) ? spacing.medium : 0,
+                }}>
+                  <Heading level={5}>
+                    Notes
+                  </Heading>
+                  <List items={platform.notes} />
+                </div>
+              : null
+            }
+            {platform.links
+              ? <div>
+                  <Heading level={5}>
+                    Links
+                  </Heading>
+                  <List
+                    items={platform.links.map(link => (
+                      <Link
+                        href={link.url}
+                        inline={true}
+                      >
+                        {link.title}
+                      </Link>
+                    ))}
+                    type='link'
+                  />
+                </div>
+              : null
+            }
+          </TabPanel>
+        ))}
+      </Tabs>
+    )
+  }
+}
 
 export default Platforms
