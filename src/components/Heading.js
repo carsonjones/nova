@@ -21,7 +21,7 @@ const levelSpecificStyles = {
     color: colors.normal.yellow,
     fontSize: fontSizes.xlarge,
     marginBottom: spacing.medium,
-    textAlign: 'left',
+    textAlign: 'center',
   },
   4: {
     color: colors.normal.cyan,
