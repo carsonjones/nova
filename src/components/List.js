@@ -1,5 +1,5 @@
 import React from 'react'
-import {colors, spacing} from '../data/styleGuide'
+import {colors, spacing, fontSizes} from '../data/styleGuide'
 import Icon from './Icon'
 
 const symbolColor = colors.normal.green
@@ -25,6 +25,7 @@ const List = ({
             : <Icon
                 type={type}
                 fill={symbolColor}
+                size={fontSizes.medium}
               />
           }
         </span>

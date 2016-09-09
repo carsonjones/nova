@@ -58,28 +58,34 @@ class Platforms extends React.Component {
                 alignItems: 'center',
               }}
             >
-              <Icon
-                type={platform.icon}
-                fill={colors.normal.blue}
-                size={40}
-              />
+              <div style={{
+                width: '60%',
+              }}>
+                <Icon
+                  type={platform.icon}
+                  fill={colors.normal.blue}
+                />
+              </div>
             </Tab>
           ))}
         </TabList>
         {platforms.map((platform, index) => (
           <TabPanel key={index}>
-            <Heading level={4}>
-              {platform.title}
-            </Heading>
             <div style={{
               marginBottom: spacing.small,
+              marginLeft: spacing.medium,
+              float: 'right',
+              width: '20%',
             }}>
               <Icon
                 type={platform.icon}
                 fill={colors.decoration.medium}
-                size={120}
+                size='100%'
               />
             </div>
+            <Heading level={4}>
+              {platform.title}
+            </Heading>
             {platform.steps
               ? <div style={{
                   marginBottom: (platform.notes || platform.links) ? spacing.medium : 0,

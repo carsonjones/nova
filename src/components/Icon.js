@@ -1,11 +1,11 @@
 import React from 'react'
-import {colors, fontSizes} from '../data/styleGuide'
+import {colors} from '../data/styleGuide'
 import graphics from '../data/graphics'
 
 const Icon = ({
   type,
   fill = colors.normal.white,
-  size = fontSizes.medium,
+  size = '100%',
 }) => (
   <svg
     viewBox={`0 0 ${graphics[type].viewBox} ${graphics[type].viewBox}`}
@@ -21,7 +21,10 @@ const Icon = ({
 Icon.propTypes = {
   type: React.PropTypes.oneOf(Object.keys(graphics)).isRequired,
   fill: React.PropTypes.string,
-  size: React.PropTypes.number,
+  size: React.PropTypes.oneOfType([
+    React.PropTypes.number,
+    React.PropTypes.string,
+  ]),
 }
 
 export default Icon

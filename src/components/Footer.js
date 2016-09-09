@@ -1,6 +1,6 @@
 import React from 'react'
 import contributors from '../data/contributors'
-import {colors, spacing} from '../data/styleGuide'
+import {colors, spacing, fontSizes} from '../data/styleGuide'
 import Link from './Link'
 import Icon from './Icon'
 
@@ -25,6 +25,7 @@ const Footer = () => (
         <Icon
           type='heart'
           fill={colors.normal.red}
+          size={fontSizes.medium}
         />
       </div>
       by
