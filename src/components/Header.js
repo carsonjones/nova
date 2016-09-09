@@ -1,19 +1,21 @@
 import React from 'react'
 import about from '../data/about'
-import {spacing} from '../data/styleGuide'
+import Section from './Section'
 import Heading from './Heading'
+import Contributors from './Contributors'
 
 const Header = () => (
-  <header style={{
-    padding: spacing.container,
-  }}>
-    <Heading level={1}>
-      {about.title}
-    </Heading>
-    <Heading level={2}>
-      {about.description}
-    </Heading>
-  </header>
+  <Section>
+    <header>
+      <Heading level={1}>
+        {about.title}
+      </Heading>
+      <Heading level={2}>
+        {about.description}
+      </Heading>
+      <Contributors />
+    </header>
+  </Section>
 )
 
 export default Header

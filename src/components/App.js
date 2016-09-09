@@ -9,7 +9,6 @@ import {
 } from '../data/styleGuide'
 import Header from './Header'
 import Main from './Main'
-import Footer from './Footer'
 import Home from './Home/Home'
 
 const App = () => ( 
@@ -32,7 +31,6 @@ const App = () => (
       <Main>
         <Home />
       </Main>
-      <Footer />
     </div>
   </div>
 )

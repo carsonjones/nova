@@ -25,7 +25,7 @@ const List = ({
             : <Icon
                 type={type}
                 fill={symbolColor}
-                size={fontSizes.medium}
+                size={type === 'bullet' ? fontSizes.small : fontSizes.medium}
               />
           }
         </span>

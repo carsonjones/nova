@@ -3,34 +3,33 @@ import {
   colors,
   fontSizes,
   spacing,
+  lineHeights,
 } from '../data/styleGuide'
 
 const levelSpecificStyles = {
   1: {
     color: colors.normal.cyan,
     fontSize: fontSizes.xxlarge,
+    lineHeight: lineHeights.xxlarge,
     textAlign: 'center',
   },
   2: {
     color: colors.normal.white,
     fontSize: fontSizes.large,
     textAlign: 'center',
+    marginBottom: spacing.medium,
   },
   3: {
     color: colors.normal.white,
-    fontSize: fontSizes.large,
+    fontSize: fontSizes.medium,
     textTransform: 'uppercase',
-    marginBottom: spacing.medium,
+    marginBottom: spacing.small,
   },
   4: {
     color: colors.normal.cyan,
     fontSize: fontSizes.xlarge,
-    marginBottom: spacing.small,
-  },
-  5: {
-    color: colors.bright.white,
-    fontSize: fontSizes.medium,
-    marginBottom: spacing.small,
+    lineHeight: 1,
+    marginBottom: spacing.xsmall,
   },
 }
 

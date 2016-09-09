@@ -14,7 +14,6 @@ const sections = [
     elements: <Characteristics />,
   },
   {
-    title: 'Platforms',
     elements: <Platforms />,
   },
 ];
