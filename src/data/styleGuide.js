@@ -11,10 +11,11 @@ export const fontFamilies = {
 }
 
 export const fontSizes = {
-  xxlarge: 76,
+  xxlarge: 103,
   xlarge: 35,
   large: 22,
   medium: 18,
+  small: 14,
 }
 
 export const fontWeights = {
@@ -22,19 +23,20 @@ export const fontWeights = {
 }
 
 export const spacing = {
-  large: 30,
-  medium: 20,
-  small: 10,
+  xlarge: 64,
+  large: 24,
+  medium: 16,
+  small: 12,
   xsmall: 7,
-  container: 20,
 }
 
 export const lineHeights = {
+  xxlarge: 1.25,
   medium: 1.5,
 }
 
 export const borderSizes = {
-  medium: 2,
+  medium: 4,
 }
 
 export const borderRadii = {
@@ -43,5 +45,6 @@ export const borderRadii = {
 }
 
 export const opacities = {
-  inactive: 0.5,
+  subtle: 0.8,
+  inactive: 0.4,
 }

@@ -9,7 +9,7 @@ const Characteristics = () => (
       <div
         key={index}
         style={{
-          marginBottom: (index + 1 < characteristics.length) ? spacing.medium : 0,
+          marginBottom: (index + 1 < characteristics.length) ? spacing.large : 0,
         }}
       >
         <Heading level={4}>{characteristic.title}</Heading>

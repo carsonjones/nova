@@ -4,18 +4,23 @@ import Heading from './Heading'
 
 const Section = ({children, title}) => (
   <section style={{
-    padding: spacing.container,
+    paddingBottom: spacing.xlarge,
+    paddingLeft: spacing.large,
+    paddingRight: spacing.large,
   }}>
-    <Heading level={3}>
-      {title}
-    </Heading>
+    {title
+      ? <Heading level={3}>
+          {title}
+        </Heading>
+      : null
+    }
     {children}
   </section>
 )
 
 Section.propTypes = {
   children: React.PropTypes.node.isRequired,
-  title: React.PropTypes.string.isRequired,
+  title: React.PropTypes.string,
 }
 
 export default Section
