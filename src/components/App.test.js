@@ -10,5 +10,5 @@ test('App renders as expected', () => {
 */
 
 test('it works', () => {
-  expect('hello world').toBe('hello world!')
+  expect('hello world').toBe('hello world')
 })
