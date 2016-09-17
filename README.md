@@ -14,7 +14,7 @@ _You will need Node 6+, npm 3+, Bash, and Git_
 
 0. Install dependencies (`npm install`)
 0. Create branch (`git checkout -b {branch-name}`)
-0. Develop (`npm start`)
+0. Develop (`npm start` and `npm test`)
 0. Push (`npm run push -- {major|minor|patch}`)
 0. Create pull request
   0. Continuous Integration runs
