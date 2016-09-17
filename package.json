@@ -1,6 +1,6 @@
 {
   "name": "nova-docs",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "scripts": {
     "start": "scripts/start",
     "push": "scripts/push",
