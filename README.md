@@ -8,7 +8,7 @@ Single source of truth for Nova documentation
 
 ## Contributing
 
-[![Build Status](https://travis-ci.org/trevordmiller/nova-colors.svg?branch=master)](https://travis-ci.org/trevordmiller/nova-colors)
+[![Build Status](https://travis-ci.org/trevordmiller/nova-docs.svg?branch=master)](https://travis-ci.org/trevordmiller/nova-docs)
 
 _You will need Node 6+, npm 3+, Bash, and Git_
 
