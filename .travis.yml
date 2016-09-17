@@ -3,11 +3,4 @@ node_js:
 - "node"
 - "6"
 script: npm test && npm run build
-deploy:
-  provider: npm
-  email: trevordmiller@icloud.com
-  api_key:
-    secure: yOZta3zYSv/+9XdYTew6IVEb6XEVm2uts0CabckZVnaHfAVzVk2A0VwbLd/tmnBZ0Jk0WAzHYTbmtr517rW6DreN3frnPfSNYxwDGCuxksesOvrW//5TmnItGXhNIxJKil9HmQ4qbZy2VglDvjZzomv5ErF0q4vYIUlqWXuTPbQadN1Y30j19MBTqrbmW+++NZwROTg28L88exLq4qBDl/Jy5xQO8G2WFV2wK4tBQBK+LBV9rNIv4TmU/xqeRMgBXtDJ+Z3lxuDbJnn1PXt+sU1YJb0G2QTRrL41eTXND5ZHcCIKLbRaBstpHKPQ7djWrTYjvW5maKcMj+bVHXtYsisyI9/1WIH9h5Hp8zinPnic5JBRGdQTh3GtBFty7iOk7ipHWIhleoniyl9B9OPCoCe6fn7iPkrDsgo/vseFauXIbAzgHbNWkSfp8eHQTiSLD1ZsRZ0W+Fi0dZEq9OdrLZo7EU1q7SD8DqEt/PI5OWvhsrUG/mI4vrdV1hTBn90oJ+RAYySiKKDb6B+2ITIEdLjCcKrUAdjCBfa2pItmGMde+UTkqF/1aXtN/fzs/tjYrfqtyzxHWVfrsNvFzcvZWclZwM5wepSu+LaBRKUABbzypGIXp6Y1sxGE8Kc7e+WTQmHZBX8xy8iywgynzKv3rB3YmyK9+cI3l4gi4O3TEko=
-  on:
-    repo: trevordmiller/nova-docs
-    branch: master
+# deploy happens automatically with GitHub Pages /docs folder
