@@ -9,9 +9,8 @@ import {
 } from '../data/styleGuide'
 import Header from './Header'
 import Main from './Main'
-import Home from './Home/Home'
 
-const App = () => ( 
+const App = ({children}) => ( 
   <div style={{
     background: colors.normal.black,
     color: colors.bright.black,
@@ -29,7 +28,7 @@ const App = () => (
     }}>
       <Header />
       <Main>
-        <Home />
+        {children}
       </Main>
     </div>
   </div>

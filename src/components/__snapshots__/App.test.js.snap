@@ -1,0 +1,172 @@
+exports[`test App renders as expected 1`] = `
+<div
+  style={
+    Object {
+      "alignItems": "center",
+      "background": "#445660",
+      "color": "#899BA6",
+      "display": "flex",
+      "flexDirection": "column",
+      "fontFamily": "\"Quicksand\", sans-serif",
+      "fontSize": 18,
+      "fontWeight": 300,
+      "lineHeight": 1.5,
+      "minHeight": "100vh"
+    }
+  }>
+  <div
+    style={
+      Object {
+        "maxWidth": 740
+      }
+    }>
+    <section
+      style={
+        Object {
+          "paddingBottom": 64,
+          "paddingLeft": 24,
+          "paddingRight": 24
+        }
+      }>
+      <header>
+        <div
+          style={
+            Object {
+              "color": "#7FC1CA",
+              "fontSize": 103,
+              "lineHeight": 1.25,
+              "textAlign": "center"
+            }
+          }>
+          Nova
+        </div>
+        <div
+          style={
+            Object {
+              "color": "#C5D4DD",
+              "fontSize": 22,
+              "marginBottom": 16,
+              "textAlign": "center"
+            }
+          }>
+          A color scheme for modern web development
+        </div>
+        <div
+          style={
+            Object {
+              "fontSize": 14,
+              "textAlign": "center"
+            }
+          }>
+          <div
+            style={
+              Object {
+                "alignItems": "center",
+                "display": "flex",
+                "justifyContent": "center"
+              }
+            }>
+            // Built with
+            <div
+              style={
+                Object {
+                  "alignItems": "center",
+                  "display": "flex",
+                  "marginLeft": 7,
+                  "marginRight": 7
+                }
+              }>
+              <svg
+                fill="#DF8C8C"
+                height={18}
+                viewBox="0 0 24 24"
+                width={18}
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M17.656 2q1.633 0 3.012 0.805t2.184 2.184 0.805 3.012q0 1.172-0.449 2.277t-1.309 1.965l-9.898 9.898-9.898-9.898q-0.859-0.859-1.309-1.965t-0.449-2.277q0-1.633 0.805-3.012t2.184-2.184 3.012-0.805q1.18 0 2.277 0.445t1.965 1.313l1.414 1.414 1.414-1.414q0.859-0.859 1.965-1.309t2.277-0.449zM17.656 4q-0.781 0-1.516 0.297t-1.312 0.875l-2.828 2.828-2.828-2.828q-0.578-0.578-1.313-0.875t-1.516-0.297q-1.094 0-2.012 0.535t-1.453 1.453-0.535 2.012q0 0.781 0.297 1.516t0.875 1.313l8.484 8.484 8.484-8.484q0.578-0.578 0.875-1.313t0.297-1.516q0-1.094-0.535-2.012t-1.453-1.453-2.012-0.535z" />
+              </svg>
+            </div>
+            by
+          </div>
+          <div
+            style={
+              Object {
+                "display": "flex",
+                "flexWrap": "wrap",
+                "justifyContent": "center",
+                "opacity": 0.8
+              }
+            }>
+            <span
+              style={
+                Object {
+                  "marginRight": 16
+                }
+              }>
+              <a
+                href="https://twitter.com/AC_Design"
+                style={
+                  Object {
+                    "color": "#83AFE5",
+                    "display": "inline",
+                    "textDecoration": "none"
+                  }
+                }
+                target="_blank">
+                @AC_Design
+              </a>
+            </span>
+            <span
+              style={
+                Object {
+                  "marginRight": 16
+                }
+              }>
+              <a
+                href="http://merrickchristensen.com/"
+                style={
+                  Object {
+                    "color": "#83AFE5",
+                    "display": "inline",
+                    "textDecoration": "none"
+                  }
+                }
+                target="_blank">
+                @iammerrick
+              </a>
+            </span>
+            <span
+              style={
+                Object {
+                  "marginRight": 0
+                }
+              }>
+              <a
+                href="http://trevordmiller.com"
+                style={
+                  Object {
+                    "color": "#83AFE5",
+                    "display": "inline",
+                    "textDecoration": "none"
+                  }
+                }
+                target="_blank">
+                @trevordmiller
+              </a>
+            </span>
+          </div>
+        </div>
+      </header>
+    </section>
+    <main
+      style={
+        Object {
+          "alignItems": "center",
+          "display": "flex",
+          "flex": 1,
+          "flexDirection": "column"
+        }
+      } />
+  </div>
+</div>
+`;
