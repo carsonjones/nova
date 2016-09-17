@@ -1,19 +1,16 @@
 {
   "name": "nova-docs",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "postbuild": "rm -rf docs && cp -r build/ docs/ && rm -rf build/"
+    "start": "scripts/start",
+    "push": "scripts/push",
+    "test": "scripts/test",
+    "build": "scripts/build"
   },
-  "pre-commit": [
-    "build"
-  ],
   "eslintConfig": {
     "extends": "./node_modules/react-scripts/config/eslint.js"
   },
   "devDependencies": {
-    "pre-commit": "1.1.3",
     "react-scripts": "0.3.0"
   },
   "dependencies": {
