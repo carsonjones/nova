@@ -4,7 +4,7 @@ import {
   Tabs,
   TabList,
   TabPanel,
-} from 'react-tabs';
+} from 'react-tabs'
 Tabs.setUseDefaultStyles(false)
 import platforms from '../../data/platforms'
 import {

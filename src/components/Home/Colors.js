@@ -22,7 +22,7 @@ const orderedColors = [
     colors.normal.white,
     colors.bright.white,
   ],
-];
+]
 
 const Colors = () => (
   <div>

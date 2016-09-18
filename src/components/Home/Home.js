@@ -16,7 +16,7 @@ const sections = [
   {
     elements: <Platforms />,
   },
-];
+]
 
 const Home = () => (
   <div>
