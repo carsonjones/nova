@@ -11,7 +11,7 @@ const Section = ({src}) => (
   <Link href={src}>
     <img
       style={{
-        border: `${borderSizes.small}px solid ${colors.decoration.medium}`,
+        border: `${borderSizes.small}px solid ${colors.decoration.light}`,
         borderRadius: borderRadii.medium,
         width: '100%',
         marginBottom: spacing.medium,
