@@ -17,6 +17,7 @@ import Heading from '../Heading'
 import Icon from '../Icon'
 import List from '../List'
 import Link from '../Link'
+import Image from '../Image'
 
 class Platforms extends React.Component {
 
@@ -74,6 +75,10 @@ class Platforms extends React.Component {
             <Heading level={4}>
               {platform.title}
             </Heading>
+            {platform.screenshot
+              ? <Image src={platform.screenshot} />
+              : null
+            }
             <div style={{
               marginTop: spacing.large,
             }}>

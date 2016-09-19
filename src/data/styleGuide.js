@@ -36,6 +36,7 @@ export const lineHeights = {
 }
 
 export const borderSizes = {
+  small: 2,
   medium: 4,
 }
 

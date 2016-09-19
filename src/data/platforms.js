@@ -2,6 +2,7 @@ const platforms = [
   {
     title: 'Vim',
     icon: 'vim',
+    screenshot: 'https://github.com/trevordmiller/nova-vim/blob/master/assets/screenshot.png?raw=true',
     steps: [
       'Install "trevordmiller/nova-vim" with your Vim plugin manager',
       'Add "colorscheme nova" to your .vimrc (after any other plugins or rules that alter your color scheme)',
@@ -25,6 +26,7 @@ const platforms = [
   {
     title: 'HyperTerm',
     icon: 'hyperterm',
+    screenshot: 'https://github.com/trevordmiller/nova-hyperterm/raw/master/assets/screenshot.png?raw=true',
     steps: [
       'Add "nova-hyperterm" to the plugins array in your "~/.hyperterm.js"',
     ],
@@ -38,6 +40,7 @@ const platforms = [
   {
     title: 'tmux',
     icon: 'tmux',
+    screenshot: 'https://github.com/trevordmiller/nova-vim/raw/master/assets/screenshot.png?raw=true',
     steps: [
       'Update your ".tmux.conf" styles as shown in the example',
     ],
@@ -54,6 +57,7 @@ const platforms = [
   {
     title: 'Atom',
     icon: 'atom',
+    screenshot: 'https://github.com/trevordmiller/nova-atom-syntax/raw/master/assets/screenshot.png?raw=true',
     steps: [
       'COMING SOON',
     ],
@@ -67,6 +71,7 @@ const platforms = [
   {
     title: 'iTerm',
     icon: 'iterm',
+    screenshot: 'https://github.com/trevordmiller/nova-iterm/raw/master/assets/screenshot.png?raw=true',
     steps: [
       'Upload "nova.itermcolors" into your "Colors" preferences pane',
     ],
