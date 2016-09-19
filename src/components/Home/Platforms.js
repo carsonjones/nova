@@ -17,6 +17,7 @@ import Heading from '../Heading'
 import Icon from '../Icon'
 import List from '../List'
 import Link from '../Link'
+import Image from '../Image'
 
 class Platforms extends React.Component {
 
@@ -77,6 +78,10 @@ class Platforms extends React.Component {
             <div style={{
               marginTop: spacing.large,
             }}>
+              {platform.screenshot
+                ? <Image src={platform.screenshot} />
+                : null
+              }
               {platform.steps
                 ? <div style={{
                     marginBottom: (platform.notes || platform.links) ? spacing.medium : 0,
