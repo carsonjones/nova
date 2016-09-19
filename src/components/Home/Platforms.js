@@ -75,13 +75,13 @@ class Platforms extends React.Component {
             <Heading level={4}>
               {platform.title}
             </Heading>
-            {platform.screenshot
-              ? <Image src={platform.screenshot} />
-              : null
-            }
             <div style={{
               marginTop: spacing.large,
             }}>
+              {platform.screenshot
+                ? <Image src={platform.screenshot} />
+                : null
+              }
               {platform.steps
                 ? <div style={{
                     marginBottom: (platform.notes || platform.links) ? spacing.medium : 0,

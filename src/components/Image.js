@@ -14,7 +14,7 @@ const Section = ({src}) => (
         border: `${borderSizes.small}px solid ${colors.decoration.medium}`,
         borderRadius: borderRadii.medium,
         width: '100%',
-        paddingBottom: spacing.small,
+        marginBottom: spacing.medium,
       }}
       src={src}
       role='presentation'
