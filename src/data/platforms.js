@@ -5,12 +5,13 @@ const platforms = [
     screenshot: 'https://github.com/trevordmiller/nova-vim/blob/master/assets/screenshot.png?raw=true',
     steps: [
       'Install "trevordmiller/nova-vim" with your Vim plugin manager',
-      'Add "colorscheme nova" to your .vimrc (after any other plugins or rules that alter your color scheme)',
+      'Add "colorscheme nova" to your ".vimrc" (after any other plugins or rules)',
+      'Restart Vim',
     ],
     notes: [
-      'You\'ll need True Color support (Latest Vim, Neovim, or GUI Vim)',
-      'For terminal Vim use, you\'ll also need a terminal with True Color support',
-      'For terminal Vim use, it is highly recommended to use a Nova terminal plugin as well for consistent colors',
+      'You\'ll need True Color support (latest Vim, Neovim, or GUI Vim)',
+      'For terminal Vim use, your terminal will also need True Color support (HyperTerm or iTerm is recommended)',
+      'If you want your editor and terminal to look consistent, you can also install the Nova HyperTerm or iTerm plugin',
     ],
     links: [
       {
@@ -24,11 +25,36 @@ const platforms = [
     ],
   },
   {
+    title: 'Atom',
+    icon: 'atom',
+    screenshot: 'https://github.com/trevordmiller/nova-atom-syntax/raw/master/assets/screenshot.png?raw=true',
+    steps: [
+      'In Atom, open your settings',
+      'Tap on the "Install" pane',
+      'Tap on "Themes"',
+      'Search for "Nova"',
+      'Tap the "Install" button for both "nova-atom-ui" and "nova-atom-syntax"',
+      'Tap on the "Themes" pane',
+      'Select "Nova Atom" for both the "UI Theme" and "Syntax Theme"',
+    ],
+    links: [
+      {
+        title: 'Source code for the UI Plugin',
+        url: 'https://github.com/trevordmiller/nova-atom-ui',
+      },
+      {
+        title: 'Source code for the Syntax Plugin',
+        url: 'https://github.com/trevordmiller/nova-atom-syntax',
+      },
+    ],
+  },
+  {
     title: 'HyperTerm',
     icon: 'hyperterm',
     screenshot: 'https://github.com/trevordmiller/nova-hyperterm/raw/master/assets/screenshot.png?raw=true',
     steps: [
-      'Add "nova-hyperterm" to the plugins array in your "~/.hyperterm.js"',
+      'Add "nova-hyperterm" to the "plugins" array in your "~/.hyperterm.js"',
+      'Restart HyperTerm',
     ],
     links: [
       {
@@ -38,51 +64,42 @@ const platforms = [
     ],
   },
   {
+    title: 'iTerm',
+    icon: 'iterm',
+    screenshot: 'https://github.com/trevordmiller/nova-iterm/raw/master/assets/screenshot.png?raw=true',
+    steps: [
+      'Download "nova.itermcolors"',
+      'In iTerm, open your preferences',
+      'Tap on "Profiles" > "Colors" > "Color Presets" > "Import"',
+      'Select the "nova.itermcolors" you downloaded',
+    ],
+    links: [
+      {
+        title: 'nova.itermcolors',
+        url: 'https://raw.githubusercontent.com/trevordmiller/nova-iterm/master/build/nova.itermcolors',
+      },
+      {
+        title: 'Source code',
+        url: 'https://github.com/trevordmiller/nova-iterm',
+      },
+    ],
+  },
+  {
     title: 'tmux',
     icon: 'tmux',
     screenshot: 'https://github.com/trevordmiller/nova-vim/raw/master/assets/screenshot.png?raw=true',
     steps: [
-      'Update your ".tmux.conf" styles as shown in the example',
+      'Install the Nova plugin for your terminal (HyperTerm or iTerm)',
+      'Use ANSI color variables in your ".tmux.conf"',
     ],
-    note: [
-      'You\'ll need to have a Nova terminal plugin installed for these ANSI color variables to work',
+    notes: [
+      'You\'ll need to have a Nova terminal plugin installed for the ANSI color variables to work',
+      'The example ".tmux.conf" uses "cyan" to match the Nova color purposes for current user state',
     ],
     links: [
       {
         title: 'Example ".tmux.conf"',
         url: 'https://github.com/trevordmiller/nova-example-dotfiles/blob/master/.tmux.conf',
-      },
-    ],
-  },
-  {
-    title: 'Atom',
-    icon: 'atom',
-    screenshot: 'https://github.com/trevordmiller/nova-atom-syntax/raw/master/assets/screenshot.png?raw=true',
-    steps: [
-      'COMING SOON',
-    ],
-    links: [
-      {
-        title: 'Source code',
-        url: 'https://github.com/trevordmiller/nova-atom',
-      },
-    ],
-  },
-  {
-    title: 'iTerm',
-    icon: 'iterm',
-    screenshot: 'https://github.com/trevordmiller/nova-iterm/raw/master/assets/screenshot.png?raw=true',
-    steps: [
-      'Upload "nova.itermcolors" into your "Colors" preferences pane',
-    ],
-    links: [
-      {
-        title: 'nova.itermcolors',
-        url: 'https://github.com/trevordmiller/nova-iterm/blob/master/nova.itermcolors',
-      },
-      {
-        title: 'Source code',
-        url: 'https://github.com/trevordmiller/nova-iterm',
       },
     ],
   },
@@ -100,6 +117,14 @@ const platforms = [
       '\'decoration\': subtle black variations (\'dark\', \'medium\', \'light\')',
     ],
     links: [
+      {
+        title: 'Example using nova-colors directly',
+        url: 'https://github.com/trevordmiller/nova-hyperterm/blob/master/index.js',
+      },
+      {
+        title: 'Example using nova-colors with a build step',
+        url: 'https://github.com/trevordmiller/nova-vim/blob/master/src/index.js',
+      },
       {
         title: 'Source code',
         url: 'https://github.com/trevordmiller/nova-colors',
