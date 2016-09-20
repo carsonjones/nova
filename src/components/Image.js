@@ -7,11 +7,11 @@ import {
 } from '../data/styleGuide'
 import Link from './Link'
 
-const Section = ({src}) => (
+const Section = ({src, quiet = false}) => (
   <Link href={src}>
     <img
       style={{
-        border: `${borderSizes.small}px solid ${colors.decoration.light}`,
+        border: quiet ? 0 : `${borderSizes.small}px solid ${colors.decoration.light}`,
         borderRadius: borderRadii.medium,
         width: '100%',
         marginBottom: spacing.medium,

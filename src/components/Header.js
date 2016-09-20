@@ -3,6 +3,7 @@ import about from '../data/about'
 import Section from './Section'
 import Heading from './Heading'
 import Contributors from './Contributors'
+import ExampleCode from './ExampleCode'
 
 const Header = () => (
   <Section>
@@ -14,6 +15,7 @@ const Header = () => (
         {about.description}
       </Heading>
       <Contributors />
+      <ExampleCode />
     </header>
   </Section>
 )
