@@ -51,5 +51,6 @@ export const opacities = {
 }
 
 export const animationSpeeds = {
-  medium: 1.0,
+  fast: 1.0,
+  medium: 1.5,
 }

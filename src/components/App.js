@@ -16,14 +16,14 @@ class App extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-      isIntroEnded: false,
+      hasIntroEnded: false,
     }
     this.handleIntroEnd = this.handleIntroEnd.bind(this)
   }
 
   handleIntroEnd() {
     this.setState({
-      isIntroEnded: true,
+      hasIntroEnded: true,
     })
   }
 
@@ -44,10 +44,17 @@ class App extends React.Component {
         <div style={{
           maxWidth: screenSizes.large,
         }}>
-          <Header onIntroEnd={this.handleIntroEnd} />
           <div style={{
-            transition: `opacity ${animationSpeeds.medium}s`,
-            opacity: this.state.isIntroEnded ? 1 : 0,
+            transition: `all ${animationSpeeds.fast}s ease`,
+            ...this.state.hasIntroEnded
+              ? {}
+              : {marginTop: '30vh'}
+          }}>
+            <Header onIntroEnd={this.handleIntroEnd} />
+          </div>
+          <div style={{
+            transition: `opacity ${animationSpeeds.medium}s ease`,
+            opacity: this.state.hasIntroEnded ? 1 : 0,
           }}>
             <Main>
               {this.props.children}
