@@ -156,6 +156,35 @@ exports[`test App renders as expected 1`] = `
             </span>
           </div>
         </div>
+        <div
+          style={
+            Object {
+              "marginTop": 64
+            }
+          }>
+          <a
+            href="test-file-stub"
+            style={
+              Object {
+                "color": "#83AFE5",
+                "display": "block",
+                "textDecoration": "none"
+              }
+            }
+            target="_blank">
+            <img
+              role="presentation"
+              src="test-file-stub"
+              style={
+                Object {
+                  "border": 0,
+                  "borderRadius": 3,
+                  "marginBottom": 16,
+                  "width": "100%"
+                }
+              } />
+          </a>
+        </div>
       </header>
     </section>
     <main

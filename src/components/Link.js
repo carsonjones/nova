@@ -21,7 +21,10 @@ const Link = ({
 
 Link.propTypes = {
   href: React.PropTypes.string.isRequired,
-  children: React.PropTypes.string.isRequired,
+  children: React.PropTypes.oneOfType([
+    React.PropTypes.string,
+    React.PropTypes.object,
+  ]).isRequired,
   inline: React.PropTypes.bool,
 }
 
