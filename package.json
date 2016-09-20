@@ -18,7 +18,8 @@
     "nova-colors": "1.0.7",
     "react": "15.3.1",
     "react-dom": "15.3.1",
-    "react-tabs": "0.7.0"
+    "react-tabs": "0.7.0",
+    "react-typist": "0.3.0"
   },
   "main": "src/index.js",
   "description": "Single source of truth for Nova documentation",

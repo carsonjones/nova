@@ -1,10 +1,5 @@
 import React from 'react'
-import {
-  colors,
-  spacing,
-  borderRadii,
-  borderSizes,
-} from '../data/styleGuide'
+import {colors, borderRadii, borderSizes} from '../data/styleGuide'
 import Link from './Link'
 
 const Section = ({src, quiet = false}) => (
@@ -14,7 +9,6 @@ const Section = ({src, quiet = false}) => (
         border: quiet ? 0 : `${borderSizes.small}px solid ${colors.decoration.light}`,
         borderRadius: borderRadii.medium,
         width: '100%',
-        marginBottom: spacing.medium,
       }}
       src={src}
       role='presentation'

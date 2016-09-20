@@ -1,5 +1,7 @@
 import React from 'react'
 import Section from '../Section'
+import Contributors from './Contributors'
+import ExampleCode from './ExampleCode'
 import Colors from './Colors'
 import Characteristics from './Characteristics'
 import Platforms from './Platforms'
@@ -20,6 +22,12 @@ const sections = [
 
 const Home = () => (
   <div>
+    <Section>
+      <Contributors />
+    </Section>
+    <Section>
+      <ExampleCode />
+    </Section>
     {sections.map((section, index) => (
       <Section
         key={index}

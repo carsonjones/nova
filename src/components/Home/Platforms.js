@@ -79,7 +79,11 @@ class Platforms extends React.Component {
               marginTop: spacing.large,
             }}>
               {platform.screenshot
-                ? <Image src={platform.screenshot} />
+                ? <div style={{
+                    marginBottom: spacing.medium,
+                  }}>
+                    <Image src={platform.screenshot} />
+                  </div>
                 : null
               }
               {platform.steps

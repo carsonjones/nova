@@ -13,6 +13,7 @@ const Link = ({
       color: colors.normal.blue,
       textDecoration: 'none',
       display: inline ? 'inline' : 'block',
+      lineHeight: 0,
     }}
   >
     {children}
