@@ -1,5 +1,5 @@
 import React from 'react'
-import Typist from 'react-typist';
+import Typist from 'react-typist'
 import about from '../data/about'
 import Heading from './Heading'
 

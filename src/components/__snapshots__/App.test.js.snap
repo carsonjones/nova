@@ -7,11 +7,13 @@ exports[`test App renders as expected 1`] = `
       "color": "#899BA6",
       "display": "flex",
       "flexDirection": "column",
-      "fontFamily": ""Quicksand", sans-serif",
+      "fontFamily": "\"Quicksand\", sans-serif",
       "fontSize": 18,
       "fontWeight": 300,
+      "height": "100vh",
       "lineHeight": 1.5,
-      "minHeight": "100vh"
+      "minHeight": "100vh",
+      "overflowY": "hidden"
     }
   }>
   <div
@@ -24,7 +26,8 @@ exports[`test App renders as expected 1`] = `
       style={
         Object {
           "marginTop": "30vh",
-          "transition": "all 1s ease"
+          "transition": "margin 1s ease",
+          "willChange": "margin"
         }
       }>
       <div
@@ -61,15 +64,7 @@ exports[`test App renders as expected 1`] = `
                   "marginBottom": 16,
                   "textAlign": "center"
                 }
-              }>
-              <div
-                className="Typist ">
-                <span
-                  className="Cursor Cursor--blinking">
-                  |
-                </span>
-              </div>
-            </div>
+              } />
           </div>
         </header>
       </div>
@@ -78,7 +73,8 @@ exports[`test App renders as expected 1`] = `
       style={
         Object {
           "opacity": 0,
-          "transition": "opacity 1.5s ease"
+          "transition": "opacity 1.5s ease",
+          "willChange": "opacity"
         }
       }>
       <main

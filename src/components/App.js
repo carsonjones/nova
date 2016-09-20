@@ -40,6 +40,8 @@ class App extends React.Component {
         flexDirection: 'column',
         alignItems: 'center',
         minHeight: '100vh',
+        height: this.state.hasIntroEnded ? 'auto' : '100vh',
+        overflowY: this.state.hasIntroEnded ? 'auto' : 'hidden',
       }}>
         <div style={{
           maxWidth: screenSizes.large,
