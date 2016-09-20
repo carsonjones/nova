@@ -45,7 +45,8 @@ class App extends React.Component {
           maxWidth: screenSizes.large,
         }}>
           <div style={{
-            transition: `all ${animationSpeeds.fast}s ease`,
+            willChange: this.state.hasIntroEnded ? 'auto' : 'margin',
+            transition: `margin ${animationSpeeds.fast}s ease`,
             ...this.state.hasIntroEnded
               ? {}
               : {marginTop: '30vh'}
@@ -53,6 +54,7 @@ class App extends React.Component {
             <Header onIntroEnd={this.handleIntroEnd} />
           </div>
           <div style={{
+            willChange: this.state.hasIntroEnded ? 'auto' : 'opacity',
             transition: `opacity ${animationSpeeds.medium}s ease`,
             opacity: this.state.hasIntroEnded ? 1 : 0,
           }}>
