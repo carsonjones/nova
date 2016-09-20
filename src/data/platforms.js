@@ -96,7 +96,7 @@ const platforms = [
     notes: [
       'You\'ll need a version of tmux that supports True Color (tmux 2.2+)',
       'You\'ll need to have a Nova terminal plugin installed for the ANSI color variables to work',
-      'The example ".tmux.conf" uses "cyan" to match the Nova color purposes for current user state',
+      'The example ".tmux.conf" uses "cyan" to match the Nova color meaning for current user state',
     ],
     links: [
       {

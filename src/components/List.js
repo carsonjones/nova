@@ -13,7 +13,7 @@ const List = ({
       <div
         key={index}
         style={{
-          marginBottom: (index + 1 < items.length) ? spacing.small : 0,
+          marginBottom: (index + 1 < items.length) ? spacing.xsmall : 0,
         }}
       >
         <span style={{
