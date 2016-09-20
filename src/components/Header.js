@@ -1,23 +1,16 @@
 import React from 'react'
-import about from '../data/about'
-import Section from './Section'
-import Heading from './Heading'
-import Contributors from './Contributors'
-import ExampleCode from './ExampleCode'
+import {spacing} from '../data/styleGuide'
+import Intro from './Intro'
 
-const Header = () => (
-  <Section>
+const Header = ({onIntroEnd}) => (
+  <div style={{
+    paddingLeft: spacing.large,
+    paddingRight: spacing.large,
+  }}>
     <header>
-      <Heading level={1}>
-        {about.title}
-      </Heading>
-      <Heading level={2}>
-        {about.description}
-      </Heading>
-      <Contributors />
-      <ExampleCode />
+      <Intro onIntroEnd={onIntroEnd} />
     </header>
-  </Section>
+  </div>
 )
 
 export default Header

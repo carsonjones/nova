@@ -49,3 +49,8 @@ export const opacities = {
   subtle: 0.8,
   inactive: 0.4,
 }
+
+export const animationSpeeds = {
+  fast: 1.0,
+  medium: 1.5,
+}

@@ -1,4 +1,4 @@
 #!/bin/bash
 set -euo pipefail
 
-react-scripts test
+react-scripts test --env=jsdom

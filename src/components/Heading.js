@@ -6,7 +6,7 @@ import {
   lineHeights,
 } from '../data/styleGuide'
 
-const levelSpecificStyles = {
+export const levelSpecificStyles = {
   1: {
     color: colors.normal.cyan,
     fontSize: fontSizes.xxlarge,
@@ -43,7 +43,10 @@ const Heading = ({
 )
 
 Heading.propTypes = {
-  children: React.PropTypes.string.isRequired,
+  children: React.PropTypes.oneOfType([
+    React.PropTypes.string,
+    React.PropTypes.object,
+  ]).isRequired,
   level: React.PropTypes.oneOf([1, 2, 3, 4, 5]).isRequired,
 }
 

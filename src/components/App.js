@@ -6,32 +6,64 @@ import {
   fontSizes,
   fontWeights,
   lineHeights,
+  animationSpeeds,
 } from '../data/styleGuide'
 import Header from './Header'
 import Main from './Main'
 
-const App = ({children}) => ( 
-  <div style={{
-    background: colors.normal.black,
-    color: colors.bright.black,
-    fontFamily: fontFamilies.primary,
-    fontSize: fontSizes.medium,
-    fontWeight: fontWeights.light,
-    lineHeight: lineHeights.medium,
-    display: 'flex',
-    flexDirection: 'column',
-    alignItems: 'center',
-    minHeight: '100vh',
-  }}>
-    <div style={{
-      maxWidth: screenSizes.large,
-    }}>
-      <Header />
-      <Main>
-        {children}
-      </Main>
-    </div>
-  </div>
-)
+class App extends React.Component {
+
+  constructor(props) {
+    super(props)
+    this.state = {
+      hasIntroEnded: false,
+    }
+    this.handleIntroEnd = this.handleIntroEnd.bind(this)
+  }
+
+  handleIntroEnd() {
+    this.setState({
+      hasIntroEnded: true,
+    })
+  }
+
+  render() {
+    return (
+      <div style={{
+        background: colors.normal.black,
+        color: colors.bright.black,
+        fontFamily: fontFamilies.primary,
+        fontSize: fontSizes.medium,
+        fontWeight: fontWeights.light,
+        lineHeight: lineHeights.medium,
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+        minHeight: '100vh',
+      }}>
+        <div style={{
+          maxWidth: screenSizes.large,
+        }}>
+          <div style={{
+            transition: `all ${animationSpeeds.fast}s ease`,
+            ...this.state.hasIntroEnded
+              ? {}
+              : {marginTop: '30vh'}
+          }}>
+            <Header onIntroEnd={this.handleIntroEnd} />
+          </div>
+          <div style={{
+            transition: `opacity ${animationSpeeds.medium}s ease`,
+            opacity: this.state.hasIntroEnded ? 1 : 0,
+          }}>
+            <Main>
+              {this.props.children}
+            </Main>
+          </div>
+        </div>
+      </div>
+    )
+  }
+}
 
 export default App

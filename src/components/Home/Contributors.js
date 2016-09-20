@@ -1,13 +1,13 @@
 import React from 'react'
-import contributors from '../data/contributors'
+import contributors from '../../data/contributors'
 import {
   colors,
   spacing,
   fontSizes,
   opacities,
-} from '../data/styleGuide'
-import Icon from './Icon'
-import Link from './Link'
+} from '../../data/styleGuide'
+import Icon from '../Icon'
+import Link from '../Link'
 
 const Contributors = () => (
   <div style={{
