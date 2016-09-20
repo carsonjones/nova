@@ -40,12 +40,15 @@ class App extends React.Component {
         flexDirection: 'column',
         alignItems: 'center',
         minHeight: '100vh',
+        height: this.state.hasIntroEnded ? 'auto' : '100vh',
+        overflowY: this.state.hasIntroEnded ? 'auto' : 'hidden',
       }}>
         <div style={{
           maxWidth: screenSizes.large,
         }}>
           <div style={{
-            transition: `all ${animationSpeeds.fast}s ease`,
+            willChange: this.state.hasIntroEnded ? 'auto' : 'margin',
+            transition: `margin ${animationSpeeds.fast}s ease`,
             ...this.state.hasIntroEnded
               ? {}
               : {marginTop: '30vh'}
@@ -53,6 +56,7 @@ class App extends React.Component {
             <Header onIntroEnd={this.handleIntroEnd} />
           </div>
           <div style={{
+            willChange: this.state.hasIntroEnded ? 'auto' : 'opacity',
             transition: `opacity ${animationSpeeds.medium}s ease`,
             opacity: this.state.hasIntroEnded ? 1 : 0,
           }}>
