@@ -18,7 +18,7 @@ const Contributing = () => (
         </Heading>
         {type.prerequisites
           ? <div style={{
-              color: colors.bright.red,
+              color: colors.bright.magenta,
             }}>
               {type.prerequisites}
             </div>
