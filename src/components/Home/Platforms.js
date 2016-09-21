@@ -11,13 +11,15 @@ import {
   colors,
   spacing,
   borderSizes,
-  opacities,
+  borderRadii,
 } from '../../data/styleGuide'
 import Heading from '../Heading'
 import Icon from '../Icon'
 import List from '../List'
 import Link from '../Link'
 import Image from '../Image'
+
+const tabBorder = `${borderSizes.medium}px solid ${colors.decoration.medium}`;
 
 class Platforms extends React.Component {
 
@@ -42,21 +44,26 @@ class Platforms extends React.Component {
           padding: 0,
           display: 'flex',
           justifyContent: 'space-between',
-          marginBottom: spacing.large,
+          borderTop: tabBorder,
+          borderRight: tabBorder,
+          borderLeft: tabBorder,
+          borderTopRightRadius: borderRadii.large,
+          borderTopLeftRadius: borderRadii.large,
         }}>
           {platforms.map((platform, index) => (
             <Tab
               key={index}
               onClick={this.handleTabClick.bind(this, index)}
               style={{
-                color: colors.normal.blue,
-                borderBottom: `${borderSizes.medium}px solid ${index === this.state.activeTab ? colors.normal.blue : colors.decoration.medium}`,
-                paddingBottom: spacing.small,
-                opacity: index === this.state.activeTab ? 1 : opacities.inactive,
+                background: index === this.state.activeTab
+                  ? colors.normal.black
+                  : colors.decoration.medium,
                 flex: 1,
                 display: 'flex',
                 justifyContent: 'center',
                 alignItems: 'center',
+                padding: '2%',
+                lineHeight: 0,
               }}
             >
               <div style={{
@@ -64,14 +71,31 @@ class Platforms extends React.Component {
               }}>
                 <Icon
                   type={platform.icon}
-                  fill={colors.normal.blue}
+                  fill={
+                    index === this.state.activeTab
+                      ? colors.normal.cyan
+                      : colors.normal.black
+                  }
                 />
               </div>
             </Tab>
           ))}
         </TabList>
         {platforms.map((platform, index) => (
-          <TabPanel key={index}>
+          <TabPanel
+            key={index}
+            style={{
+              borderRight: tabBorder,
+              borderBottom: tabBorder,
+              borderLeft: tabBorder,
+              borderBottomRightRadius: borderRadii.large,
+              borderBottomLeftRadius: borderRadii.large,
+              paddingTop: spacing.large,
+              paddingRight: spacing.medium,
+              paddingBottom: spacing.medium,
+              paddingLeft: spacing.medium,
+            }}
+          >
             <Heading level={4}>
               {platform.title}
             </Heading>
@@ -82,13 +106,18 @@ class Platforms extends React.Component {
                 ? <div style={{
                     marginBottom: spacing.medium,
                   }}>
-                    <Image src={platform.screenshot} />
+                    <Image
+                      src={platform.screenshot}
+                      quiet={true}
+                    />
                   </div>
                 : null
               }
               {platform.steps
                 ? <div style={{
-                    marginBottom: (platform.notes || platform.links) ? spacing.medium : 0,
+                    marginBottom: (platform.notes || platform.links)
+                      ? spacing.medium
+                      : 0,
                   }}>
                     <Heading level={3}>
                       Instructions
@@ -102,7 +131,9 @@ class Platforms extends React.Component {
               }
               {platform.notes
                 ? <div style={{
-                    marginBottom: (platform.links) ? spacing.medium : 0,
+                    marginBottom: (platform.links)
+                      ? spacing.medium
+                      : 0,
                   }}>
                     <Heading level={3}>
                       Notes
