@@ -1,6 +1,7 @@
 import novaColors from 'nova-colors'
 
 export const screenSizes = {
+  small: 320,
   large: 740,
 }
 

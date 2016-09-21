@@ -3,7 +3,7 @@ import {borderRadii} from '../../data/styleGuide'
 
 const ColorTile = ({
   color,
-  size = 68,
+  size,
 }) => (
   <div style={{
     background: color,
@@ -15,7 +15,7 @@ const ColorTile = ({
 
 ColorTile.propTypes = {
   color: React.PropTypes.string.isRequired,
-  size: React.PropTypes.number,
+  size: React.PropTypes.number.isRequired,
 }
 
 export default ColorTile

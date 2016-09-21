@@ -10,7 +10,7 @@ const Contributing = () => (
       <div
         key={index}
         style={{
-          marginBottom: (index + 1 < contributing.types.length) ? spacing.medium : 0,
+          marginBottom: (index + 1 < contributing.types.length) ? spacing.large : 0,
         }}
       >
         <Heading level={4}>

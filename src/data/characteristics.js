@@ -17,7 +17,7 @@ const characteristics = [
   },
   {
     title: 'Maintainable',
-    description: 'Single-source-of-truth for colors and documentation',
+    description: 'Single-source-of-truth for color values and documentation',
   },
   {
     title: 'Free',

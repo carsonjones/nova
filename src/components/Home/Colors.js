@@ -1,49 +1,41 @@
 import React from 'react'
-import {colors, spacing} from '../../data/styleGuide'
+import colorMeanings from '../../data/colorMeanings'
+import {spacing, screenSizes} from '../../data/styleGuide'
 import ColorTile from './ColorTile'
 
-const orderedColors = [
-  [
-    colors.normal.cyan,
-    colors.normal.blue,
-    colors.normal.magenta,
-    colors.bright.magenta,
-    colors.normal.red,
-    colors.bright.red,
-    colors.normal.yellow,
-    colors.normal.green,
-  ],
-  [
-    colors.decoration.dark,
-    colors.normal.black,
-    colors.decoration.medium,
-    colors.decoration.light,
-    colors.bright.black,
-    colors.normal.white,
-    colors.bright.white,
-  ],
-]
-
 const Colors = () => (
-  <div>
-    {orderedColors.map((row, index) => (
-      <div 
+  <div style={{
+    display: 'flex',
+    flexWrap: 'wrap',
+  }}>
+    {colorMeanings.map((group, index) => (
+      <div
         key={index}
         style={{
-          display: 'flex',
-          flexWrap: 'wrap',
-          alignItems: 'center',
+          minWidth: (screenSizes.small) - (spacing.small * 2) - (spacing.large * 2),
+          marginBottom: (index + 1 < colorMeanings.length) ? spacing.xsmall : 0,
         }}
       >
-        {row.map((cell, index) => (
+        {group.map((color, index) => (
           <div
             key={index}
             style={{
-              marginRight: (index + 1 < row.length) ? spacing.small : 0,
-              marginBottom: spacing.small,
+              marginBottom: (index + 1 < group.length) ? spacing.xsmall : 0,
+              display: 'flex',
+              alignItems: 'center',
             }}
           >
-            <ColorTile color={cell} />
+            <div style={{
+              marginRight: spacing.small,
+            }}>
+              <ColorTile
+                color={color.value}
+                size={39}
+              />
+            </div>
+            <div>
+              {color.meaning}
+            </div>
           </div>
         ))}
       </div>
