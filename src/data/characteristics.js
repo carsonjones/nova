@@ -1,11 +1,11 @@
 const characteristics = [
   {
-    title: 'Current',
-    description: 'First-class syntax highlighting for today\'s web development languages',
-  },
-  {
     title: 'Intentional',
     description: 'Colors have a dedicated meaning',
+  },
+  {
+    title: 'Current',
+    description: 'First-class syntax highlighting for today\'s web development languages',
   },
   {
     title: 'Soft',

@@ -19,6 +19,7 @@ const Contributing = () => (
         {type.prerequisites
           ? <div style={{
               color: colors.bright.magenta,
+              marginBottom: spacing.xsmall,
             }}>
               {type.prerequisites}
             </div>
