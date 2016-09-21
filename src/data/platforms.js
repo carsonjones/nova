@@ -10,9 +10,7 @@ const platforms = [
     ],
     notes: [
       'You\'ll need True Color support (latest Vim, Neovim, or GUI Vim)',
-      'For terminal Vim use, your terminal will also need True Color support (HyperTerm or iTerm is recommended)',
-      'If you want your editor and terminal to look consistent, you can also install the Nova HyperTerm or iTerm plugin',
-      'If you use tmux, you may need to update your settings with the Nova tmux plugin',
+      'For terminal Vim use, your terminal will also need True Color support',
     ],
     links: [
       {
@@ -90,13 +88,11 @@ const platforms = [
     icon: 'tmux',
     screenshot: 'https://github.com/trevordmiller/nova-vim/raw/master/assets/screenshot.png?raw=true',
     steps: [
-      'Install the Nova plugin for your terminal (HyperTerm or iTerm)',
+      'Install a Nova plugin for your terminal',
       'Use ANSI color variables in your ".tmux.conf"',
     ],
     notes: [
       'You\'ll need a version of tmux that supports True Color (tmux 2.2+)',
-      'You\'ll need to have a Nova terminal plugin installed for the ANSI color variables to work',
-      'The example ".tmux.conf" uses "cyan" to match the Nova color purposes for current user state',
     ],
     links: [
       {
@@ -110,13 +106,13 @@ const platforms = [
     icon: 'npm',
     steps: [
       'npm install -S nova-colors',
-      'import novaColors from \'nova-colors\'',
+      'import novaColors from "nova-colors"',
       'novaColors.{colorCategory}.{colorType}',
     ],
     notes: [
-      '\'normal\': standard 8 ANSI colors (\'black\', red\', green\', yellow\', blue\', magenta\', cyan\', white\')',
-      '\'bright\': bright variations (\'black\', \'red\', \'magenta\', \'white\')',
-      '\'decoration\': subtle black variations (\'dark\', \'medium\', \'light\')',
+      '"normal": standard 8 ANSI colors',
+      '"bright": bright variations ("black", "red", "magenta", "white")',
+      '"decoration": gray variations ("dark", "medium", "light")',
     ],
     links: [
       {

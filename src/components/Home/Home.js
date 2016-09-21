@@ -5,8 +5,15 @@ import ExampleCode from './ExampleCode'
 import Colors from './Colors'
 import Characteristics from './Characteristics'
 import Platforms from './Platforms'
+import Contributing from './Contributing'
 
 const sections = [
+  {
+    elements: <Contributors />,
+  },
+  {
+    elements: <ExampleCode />,
+  },
   {
     title: 'Colors',
     elements: <Colors />,
@@ -18,16 +25,14 @@ const sections = [
   {
     elements: <Platforms />,
   },
+  {
+    title: 'Contributing',
+    elements: <Contributing />,
+  },
 ]
 
 const Home = () => (
   <div>
-    <Section>
-      <Contributors />
-    </Section>
-    <Section>
-      <ExampleCode />
-    </Section>
     {sections.map((section, index) => (
       <Section
         key={index}

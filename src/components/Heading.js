@@ -46,7 +46,7 @@ Heading.propTypes = {
   children: React.PropTypes.oneOfType([
     React.PropTypes.string,
     React.PropTypes.object,
-  ]).isRequired,
+  ]),
   level: React.PropTypes.oneOf([1, 2, 3, 4, 5]).isRequired,
 }
 
