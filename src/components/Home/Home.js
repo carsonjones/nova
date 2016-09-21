@@ -12,11 +12,10 @@ const sections = [
     elements: <Contributors />,
   },
   {
-    elements: <ExampleCode />,
+    elements: <Colors />,
   },
   {
-    title: 'Colors',
-    elements: <Colors />,
+    elements: <ExampleCode />,
   },
   {
     title: 'Characteristics',

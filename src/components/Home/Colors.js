@@ -1,39 +1,41 @@
 import React from 'react'
 import colorMeanings from '../../data/colorMeanings'
-import {spacing, screenSizes} from '../../data/styleGuide'
+import {spacing, fontSizes} from '../../data/styleGuide'
 import ColorTile from './ColorTile'
 
+const tileWidth = 72
+
 const Colors = () => (
-  <div style={{
-    display: 'flex',
-    flexWrap: 'wrap',
-  }}>
+  <div>
     {colorMeanings.map((group, index) => (
       <div
         key={index}
         style={{
-          minWidth: (screenSizes.small) - (spacing.small * 2) - (spacing.large * 2),
-          marginBottom: (index + 1 < colorMeanings.length) ? spacing.xsmall : 0,
+          display: 'flex',
+          flexWrap: 'wrap',
         }}
       >
         {group.map((color, index) => (
           <div
             key={index}
             style={{
-              marginBottom: (index + 1 < group.length) ? spacing.xsmall : 0,
-              display: 'flex',
-              alignItems: 'center',
+              marginRight: (index + 1 < group.length) ? spacing.medium : 0,
+              marginBottom: (index + 1 < group.length) ? spacing.large : 0,
+              textAlign: 'center',
+              width: tileWidth,
             }}
           >
             <div style={{
-              marginRight: spacing.small,
+              marginBottom: spacing.small,
             }}>
               <ColorTile
                 color={color.value}
-                size={39}
+                size={tileWidth}
               />
             </div>
-            <div>
+            <div style={{
+              fontSize: fontSizes.small,
+            }}>
               {color.meaning}
             </div>
           </div>

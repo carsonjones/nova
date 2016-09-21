@@ -4,23 +4,19 @@ const colorMeanings = [
   [
     {
       value: colors.normal.cyan,
-      meaning: 'Values / User State',
+      meaning: 'Value / State',
     },
     {
       value: colors.normal.blue,
-      meaning: 'Identifiers',
-    },
-    {
-      value: colors.normal.yellow,
-      meaning: 'Statements',
-    },
-    {
-      value: colors.normal.green,
-      meaning: 'Types',
+      meaning: 'Identifier',
     },
     {
       value: colors.normal.magenta,
-      meaning: 'Globals',
+      meaning: 'Global',
+    },
+    {
+      value: colors.bright.magenta,
+      meaning: 'Emphasis',
     },
     {
       value: colors.normal.red,
@@ -31,25 +27,17 @@ const colorMeanings = [
       meaning: 'Special',
     },
     {
-      value: colors.bright.magenta,
-      meaning: 'Emphasis',
+      value: colors.normal.yellow,
+      meaning: 'Statement',
+    },
+    {
+      value: colors.normal.green,
+      meaning: 'Type',
     },
   ],
   [
     {
-      value: colors.bright.black,
-      meaning: 'Trivial',
-    },
-    {
-      value: colors.normal.white,
-      meaning: 'Default Foreground',
-    },
-    {
-      value: colors.normal.black,
-      meaning: 'Default Background',
-    },
-    {
-      value: colors.bright.white,
+      value: colors.decoration.dark,
       meaning: 'Decoration',
     },
     {
@@ -61,7 +49,19 @@ const colorMeanings = [
       meaning: 'Decoration',
     },
     {
-      value: colors.decoration.dark,
+      value: colors.normal.black,
+      meaning: 'Default Back',
+    },
+    {
+      value: colors.bright.black,
+      meaning: 'Trivial',
+    },
+    {
+      value: colors.normal.white,
+      meaning: 'Default Text',
+    },
+    {
+      value: colors.bright.white,
       meaning: 'Decoration',
     },
   ],

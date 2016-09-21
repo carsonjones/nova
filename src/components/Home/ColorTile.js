@@ -7,7 +7,7 @@ const ColorTile = ({
 }) => (
   <div style={{
     background: color,
-    borderRadius: borderRadii.medium,
+    borderRadius: borderRadii.large,
     width: size,
     height: size,
   }} />

@@ -64,6 +64,7 @@ class Platforms extends React.Component {
                 alignItems: 'center',
                 padding: '2%',
                 lineHeight: 0,
+                cursor: 'pointer',
               }}
             >
               <div style={{
