@@ -34,7 +34,7 @@ class App extends React.Component {
         color: colors.bright.black,
         fontFamily: fontFamilies.primary,
         fontSize: fontSizes.medium,
-        fontWeight: fontWeights.light,
+        fontWeight: fontWeights.normal,
         lineHeight: lineHeights.medium,
         display: 'flex',
         flexDirection: 'column',
