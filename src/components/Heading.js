@@ -2,6 +2,7 @@ import React from 'react'
 import {
   colors,
   fontSizes,
+  fontWeights,
   spacing,
   lineHeights,
 } from '../data/styleGuide'
@@ -37,7 +38,10 @@ const Heading = ({
   children,
   level,
 }) => (
-  <div style={levelSpecificStyles[level]}>
+  <div style={{
+    fontWeight: fontWeights.light,
+    ...levelSpecificStyles[level],
+  }}>
     {children}
   </div>
 )

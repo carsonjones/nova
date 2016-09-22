@@ -9,7 +9,7 @@ exports[`test App renders as expected 1`] = `
       "flexDirection": "column",
       "fontFamily": "\"Quicksand\", sans-serif",
       "fontSize": 18,
-      "fontWeight": 300,
+      "fontWeight": 400,
       "height": "100vh",
       "lineHeight": 1.5,
       "minHeight": "100vh",
@@ -44,6 +44,7 @@ exports[`test App renders as expected 1`] = `
                 Object {
                   "color": "#7FC1CA",
                   "fontSize": 103,
+                  "fontWeight": 300,
                   "lineHeight": 1.25,
                   "textAlign": "center"
                 }
@@ -61,6 +62,7 @@ exports[`test App renders as expected 1`] = `
                 Object {
                   "color": "#C5D4DD",
                   "fontSize": 22,
+                  "fontWeight": 300,
                   "marginBottom": 16,
                   "textAlign": "center"
                 }
