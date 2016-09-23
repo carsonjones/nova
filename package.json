@@ -1,6 +1,6 @@
 {
   "name": "nova",
-  "version": "1.10.3",
+  "version": "1.11.0",
   "scripts": {
     "start": "scripts/start",
     "push": "scripts/push",
