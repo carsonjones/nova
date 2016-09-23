@@ -3,7 +3,7 @@ exports[`test App renders as expected 1`] = `
   style={
     Object {
       "alignItems": "center",
-      "background": "#445660",
+      "background": "#3C4C55",
       "color": "#899BA6",
       "display": "flex",
       "flexDirection": "column",
