@@ -3,11 +3,14 @@ import {spacing} from '../data/styleGuide'
 import Heading from './Heading'
 
 const Section = ({children, title}) => (
-  <section style={{
-    paddingBottom: spacing.xlarge,
-    paddingLeft: spacing.large,
-    paddingRight: spacing.large,
-  }}>
+  <section
+    id={title}
+    style={{
+      paddingBottom: spacing.xlarge,
+      paddingLeft: spacing.large,
+      paddingRight: spacing.large,
+    }}
+  >
     {title
       ? <Heading level={3}>
           {title}
