@@ -43,6 +43,7 @@ const platforms = [
     ],
     notes: [
       'Install "language-babel" for full JS colors',
+      'Install "language-babel" for full JSX colors',
     ],
     links: [
       {
