@@ -12,10 +12,10 @@ const platforms = [
       'You\'ll need True Color support (latest Vim, Neovim, or GUI Vim)',
       'For terminal Vim use, your terminal will also need True Color support',
       'Using the Nova HyperTerm or iTerm plugin is recommended',
-      'For JS, install "pangloss/vim-javascript"',
-      'For HTML5, install "othree/html5.vim"',
-      'For CSS3, install "hail2u/vim-css3-syntax"',
-      'For React/JSX, install "mxw/vim-jsx"',
+      'Install "pangloss/vim-javascript", for full JS colors',
+      'Install "othree/html5.vim" for full HTML colors',
+      'Install "hail2u/vim-css3-syntax" for full CSS colors',
+      'Install "mxw/vim-jsx" for full React colors',
     ],
     links: [
       {
@@ -40,6 +40,10 @@ const platforms = [
       'Tap the "Install" button for both "nova-atom-ui" and "nova-atom-syntax"',
       'Tap on the "Themes" pane',
       'Select "Nova Atom" for both the "UI Theme" and "Syntax Theme"',
+    ],
+    notes: [
+      'Install "language-babel" for full JS colors',
+      'Install "language-babel" for full JSX colors',
     ],
     links: [
       {
