@@ -93,12 +93,32 @@ const platforms = [
     ],
   },
   {
+    title: 'Git',
+    icon: 'git',
+    screenshot: 'https://github.com/trevordmiller/nova-git/raw/master/assets/screenshot.png?raw=true',
+    steps: [
+      'Install a Nova plugin for your terminal',
+      'Use ANSI color variables in your ".gitconfig"',
+      'For Nova color meanings, see the example ".gitconfig"',
+    ],
+    notes: [
+      'You\'ll need a version of Git that supports the latest color options (git 2.10)',
+    ],
+    links: [
+      {
+        title: 'Example ".gitconfig"',
+        url: 'https://github.com/trevordmiller/nova-git/blob/master/assets/.gitconfig',
+      },
+    ],
+  },
+  {
     title: 'tmux',
     icon: 'tmux',
     screenshot: 'https://github.com/trevordmiller/nova-vim/raw/master/assets/screenshot.png?raw=true',
     steps: [
       'Install a Nova plugin for your terminal',
       'Use ANSI color variables in your ".tmux.conf"',
+      'For Nova color meanings, see the example ".tmux.conf"',
     ],
     notes: [
       'You\'ll need a version of tmux that supports True Color (tmux 2.2+)',
