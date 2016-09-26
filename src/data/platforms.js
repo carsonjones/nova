@@ -20,7 +20,7 @@ const platforms = [
     links: [
       {
         title: 'Example ".vimrc"',
-        url: 'https://github.com/trevordmiller/nova-example-dotfiles/blob/master/.vimrc',
+        url: 'https://github.com/trevordmiller/nova-vim/blob/master/assets/.vimrc',
       },
       {
         title: 'Source code',
@@ -65,6 +65,10 @@ const platforms = [
       'Restart HyperTerm',
     ],
     links: [
+      {
+        title: 'Example ".hyperterm.js"',
+        url: 'https://github.com/trevordmiller/nova-hyperterm/blob/master/assets/.hyperterm.js',
+      },
       {
         title: 'Source code',
         url: 'https://github.com/trevordmiller/nova-hyperterm',
@@ -114,7 +118,7 @@ const platforms = [
   {
     title: 'tmux',
     icon: 'tmux',
-    screenshot: 'https://github.com/trevordmiller/nova-vim/raw/master/assets/screenshot.png?raw=true',
+    screenshot: 'https://github.com/trevordmiller/nova-tmux/raw/master/assets/screenshot.png?raw=true',
     steps: [
       'Install a Nova plugin for your terminal',
       'Use ANSI color variables in your ".tmux.conf"',
@@ -126,7 +130,7 @@ const platforms = [
     links: [
       {
         title: 'Example ".tmux.conf"',
-        url: 'https://github.com/trevordmiller/nova-example-dotfiles/blob/master/.tmux.conf',
+        url: 'https://github.com/trevordmiller/nova-tmux/blob/master/assets/.tmux.conf',
       },
     ],
   },
